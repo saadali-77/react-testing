@@ -10,13 +10,13 @@ export const Application = () => {
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          {/* <input
+          <input
             type="text"
             id="name"
             placeholder="Fullname"
             value="Vishwas"
             onChange={() => {}}
-          /> */}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
