@@ -4,6 +4,6 @@ type greet={
 
 export const Greet = (prop:greet) => {
   return (
-    <div>Hello {prop.name}</div>
+    <div>Hello  {prop.name? prop.name:'Guest'}</div>
   )
 }
