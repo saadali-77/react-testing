@@ -14,6 +14,11 @@ const HeadElement= screen.getByRole('heading',{
     level:2
 })
 expect(HeadElement).toBeInTheDocument()
+
+const EleTerms= screen.getByLabelText('I agree terms and conditions',{
+    selector:'input'
+})
+expect(EleTerms).toBeInTheDocument()
    const Elementselect= screen.getByRole('combobox')
    expect(Elementselect).toBeInTheDocument()
    const ElementButton= screen.getByRole('button')
