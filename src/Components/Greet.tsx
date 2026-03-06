@@ -1,7 +1,9 @@
+type greet={
+    name?:string
+}
 
-
-export const Greet = () => {
+export const Greet = (prop:greet) => {
   return (
-    <div>Hello</div>
+    <div>Hello {prop.name}</div>
   )
 }

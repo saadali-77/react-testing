@@ -5,3 +5,8 @@ test('first greet test',()=>{
  const linkelement=   screen.getByText(/hello/i)
  expect(linkelement).toBeInTheDocument()
 })
+test('first greet test 2',()=>{
+   render(<Greet name='saad'/>)
+ const linkelement=   screen.getByText('Hello saad')
+ expect(linkelement).toBeInTheDocument()
+})
