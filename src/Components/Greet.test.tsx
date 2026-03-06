@@ -22,3 +22,6 @@ describe('Greets',()=>{
 
 
 })
+// file name convention .test.tsx or spec.tsx greet-test.tsx
+// we can use it instead test also
+// with it for focus we use fit and for skip xit
