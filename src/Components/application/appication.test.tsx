@@ -27,3 +27,5 @@ expect(PlaceEle).toBeInTheDocument()
    expect(ElementButton).toBeInTheDocument()
     })
 })
+// getbyallrole 
+// expect(element).tohavelength(skill.length)
