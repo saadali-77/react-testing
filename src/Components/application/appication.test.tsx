@@ -10,6 +10,12 @@ describe('application',()=>{
    }) // we specify {with key value} and put label name for get by role options
   
    expect(Element).toBeInTheDocument()
+const Rege= screen.getByText('all fiel',{exact:false})
+expect(Rege).toBeInTheDocument()
+
+
+
+
 const HeadElement= screen.getByRole('heading',{
     level:2
 })
@@ -26,6 +32,7 @@ expect(PlaceEle).toBeInTheDocument()
    const ElementButton= screen.getByRole('button')
    expect(ElementButton).toBeInTheDocument()
     })
+    
 })
 // getbyallrole 
 // expect(element).tohavelength(skill.length)
