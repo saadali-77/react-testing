@@ -8,11 +8,11 @@ export const Skills = (props: SkillsProps) => {
   const { skills } = props
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoggedIn(true)
-  //   }, 5000)
-  // }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoggedIn(true)
+    }, 100)
+  }, [])
   return (
     <>
       <ul>

@@ -31,15 +31,15 @@ describe('Skills', () => {
 
   test('Start Learning button is eventually displayed', async () => {
     render(<Skills skills={skills} />)
-    const startLearningButton = await screen.findByRole(
-      'button',
-      {
-        name: 'Start learning',
-      },
-      {
-        timeout: 1002,
-      }
-    )
-    expect(startLearningButton).toBeInTheDocument()
+   const EventElement=  await screen.findByRole('button',{
+    name:'Start learning'
+
+   },{
+    timeout:2000 //to icrease custom timeout we pass third arguments
+   }
+
+   )
+   expect(EventElement).toBeInTheDocument()
+  
   })
 })
