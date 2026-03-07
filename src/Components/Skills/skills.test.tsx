@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen ,logRoles} from '@testing-library/react'
 import { Skills } from './Skills'
 
 describe('Skills', () => {
@@ -23,6 +23,7 @@ describe('Skills', () => {
 
   test('Start Learning button is not rendered', () => {
     render(<Skills skills={skills} />)
+    screen.debug()
     const startLearningButton = screen.queryByRole('button', {
       name: 'Start learning',
     })
@@ -30,7 +31,8 @@ describe('Skills', () => {
   })
 
   test('Start Learning button is eventually displayed', async () => {
-    render(<Skills skills={skills} />)
+   const view= render(<Skills skills={skills} />)
+   logRoles(view.container)
    const EventElement=  await screen.findByRole('button',{
     name:'Start learning'
 
@@ -39,6 +41,7 @@ describe('Skills', () => {
    }
 
    )
+   screen.debug()
    expect(EventElement).toBeInTheDocument()
   
   })
