@@ -19,6 +19,8 @@ const EleTerms= screen.getByLabelText('I agree terms and conditions',{
     selector:'input'
 })
 expect(EleTerms).toBeInTheDocument()
+const PlaceEle= screen.getByPlaceholderText('Fullname')
+expect(PlaceEle).toBeInTheDocument()
    const Elementselect= screen.getByRole('combobox')
    expect(Elementselect).toBeInTheDocument()
    const ElementButton= screen.getByRole('button')
